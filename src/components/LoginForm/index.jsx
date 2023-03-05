@@ -2,10 +2,10 @@ import React, {useState} from 'react';
 import { useNavigate } from 'react-router-dom';
 
 function LoginForm(){
-const [ credentials, setCredentials ] = useState({
-    username: '',
-    password: '',
-});
+    const [ credentials, setCredentials ] = useState({
+        username: '',
+        password: '',
+    });
 
 const handleChange = (event) => {
     const { id, value } = event.target;
@@ -22,6 +22,7 @@ const handleSubmit = (event) => {
 
     if (credentials.username && credentials.password){
         postData().then((response)=> {
+            console.log(response)
             window.localStorage.setItem("token", response.token);
             navigate("/");
         })
