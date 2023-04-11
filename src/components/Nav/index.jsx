@@ -16,7 +16,6 @@ function Nav() {
             <StyledLink ToURL="/" TitleLink = 'Home'/>
             <StyledLink ToURL="/projects" TitleLink = 'Project'/>
             <StyledLink ToURL="/createproject" TitleLink = 'Create Project'/>
-            {/* <StyledLink ToURL="/createpledge" TitleLink = 'Create Pledge'/> */}
             <StyledLink ToURL="/login" TitleLink = 'Login'/>
             <StyledLink ToURL="/signup" TitleLink = 'Sign Up'/>
             </div>
