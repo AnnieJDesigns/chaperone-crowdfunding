@@ -27,7 +27,7 @@ function ProjectForm() {
         if (project.title && project.description){
             postData().then((response)=> {
                 console.log(response)
-                navigate(`/project/${response.id}`);
+                navigate(`/projects/${response.id}`);
             })
         }
     }
@@ -54,6 +54,9 @@ function ProjectForm() {
     
         return (
             <form>
+                <div className='title-form'>
+                    <h2>Create a Project</h2>
+                </div>
                 <div>
                     <label htmlFor="title">Title</label>
                     <input onChange={handleChange} type="text" id="title" placeholder="enter title"/>
@@ -81,7 +84,7 @@ function ProjectForm() {
                     </label>
                 </div>
                 
-                <button onClick={handleSubmit} type="submit">
+                <button className="primary-button" onClick={handleSubmit} type="submit">
                     Submit
                 </button>
             </form>

@@ -1,11 +1,35 @@
+
+/* .project-cards {
+    padding: 2%;
+    display: inline-block;
+} */
+
 .project-card {
-    width: 100%;
     border: 1px solid black;
     box-shadow: 0px 0px 5px gray;
+    height: 400px;
+    width: 300px;
+    margin: 20px;
 }
 
-.project-card img {
+.project-image-container {
+    height: 220px;
     width: 100%;
-    height: 300px;
+}
+
+#project-display-image {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
+
+.project-text {
+    padding: 3%;
+
+}
+
+
+
+
+
+

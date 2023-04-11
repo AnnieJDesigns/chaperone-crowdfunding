@@ -52,6 +52,9 @@ function  PledgeForm() {
 
                 return (
                     <form>
+                         <div className='title-form'>
+                            <h2>Make a Pledge</h2>
+                        </div>
                         <div>
                             <label htmlFor="amount">Amount</label>
                             <input onChange={handleChange} type="text" id="amount" placeholder="enter amount"/>
@@ -61,7 +64,7 @@ function  PledgeForm() {
                             <input onChange={handleChange} type="text" id="comment" placeholder="enter comment"/>
                         </div>
                         
-                        <button onClick={handleSubmit} type="submit">
+                        <button className="primary-button" onClick={handleSubmit} type="submit">
                             Submit
                         </button>
                     </form>

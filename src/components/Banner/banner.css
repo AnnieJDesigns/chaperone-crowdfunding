@@ -1,0 +1,8 @@
+#hero {
+    height: 100px;
+    padding: 50px; 
+    background-color: #9CA8CA;
+    /* display: flex;
+    flex-wrap: wrap;
+    align-content: stretch; */
+}

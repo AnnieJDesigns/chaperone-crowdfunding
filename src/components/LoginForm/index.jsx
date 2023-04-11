@@ -42,7 +42,9 @@ const postData = async() => {
 
     return (
         <form>
-            
+             <div className='title-form'>
+                    <h2>Login</h2>
+            </div>
             <div>
                 <label htmlFor="username"> Username: </label>
                 <input onChange={handleChange} type="text" id="username" placeholder="Enter username"></input> 
@@ -53,7 +55,7 @@ const postData = async() => {
                 <input onChange={handleChange} type="text" id="password" placeholder="Password"></input> 
             </div>
 
-            <button onClick={handleSubmit} type="submit">Login</button>
+            <button className="primary-button" onClick={handleSubmit} type="submit">Login</button>
             
 
         </form>

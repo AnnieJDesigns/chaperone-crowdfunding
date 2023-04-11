@@ -7,12 +7,16 @@ import LoginPage from './pages/LoginPage';
 import ProjectForm from './pages/CreateProject';
 import CreateProject from './pages/CreateProject';
 import CreatePledge from './pages/CreatePledge';
+import AllProjectPage from './pages/AllProjectPage';
+import Footer from './components/Footer/footer';
+import SignUpPage from './pages/SignUpPage';
 
 const HeaderLayout = () => {
   return (
     <div>
     <Nav/>
     <Outlet/>
+    <Footer />
     </div>
   )
 }
@@ -26,11 +30,11 @@ const router = createBrowserRouter([
         element: <HomePage />
       },
       {
-        path: '/project',
-        element: <HomePage />
+        path: '/projects/',
+        element: <AllProjectPage />
       },
       {
-        path: '/project/:id',
+        path: '/projects/:id',
         element: <ProjectPage />
       }, 
       {
@@ -44,6 +48,10 @@ const router = createBrowserRouter([
       {
         path: '/createpledge',
         element: <CreatePledge />
+      },
+      {
+        path: '/signup',
+        element: <SignUpPage />
       }
 
     ]

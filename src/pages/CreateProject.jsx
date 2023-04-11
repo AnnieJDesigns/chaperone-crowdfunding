@@ -2,7 +2,7 @@ import React from 'react';
 import ProjectForm from '../components/ProjectForm';
 
 function CreateProject() {
-    return <ProjectForm />;
+    return <div className='form-wrapper'><ProjectForm /></div>;
 }
 
 export default CreateProject;
