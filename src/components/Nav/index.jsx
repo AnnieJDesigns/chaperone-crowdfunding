@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import {useNavigate} from 'react-router-dom';
-import './nav.css'
+import './nav.css';
 import StyledLink from '../Link/StyledLink';
 
 function Nav() {
