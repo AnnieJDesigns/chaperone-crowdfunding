@@ -5,6 +5,8 @@ function  PledgeForm() {
     const [pledges,setPledge] = useState({
         amount: '',
         comment: '',
+        anonymous: false,
+        project_id: '',
         id: ''
     });
 
@@ -24,7 +26,7 @@ function  PledgeForm() {
         if (pledges.amount){
             postData().then((response)=> {
                 console.log(response)
-                navigate(`/pledges/${response.id}`);
+                navigate(`/`);
             })
         }
     }
@@ -62,6 +64,10 @@ function  PledgeForm() {
                         <div>
                             <label htmlFor="comment">Comment</label>
                             <input onChange={handleChange} type="text" id="comment" placeholder="enter comment"/>
+                        </div>
+                        <div>
+                            <label htmlFor="project">Project ID</label>
+                            <input onChange={handleChange} type="number" id="project" placeholder="what project would you like to support"/>
                         </div>
                         
                         <button className="primary-button" onClick={handleSubmit} type="submit">

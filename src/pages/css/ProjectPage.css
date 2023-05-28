@@ -1,0 +1,33 @@
+.project-page {
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: auto;
+}
+
+.project-page-image {
+    display: flex;
+    justify-content: center;
+    margin:auto;
+}
+
+.project-page-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin:auto;
+}
+
+.project-page-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-page-pledgeform {
+    display: flex;
+}
+
+body {
+    margin: auto;
+}
