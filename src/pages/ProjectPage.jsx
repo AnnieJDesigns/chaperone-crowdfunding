@@ -1,6 +1,8 @@
 import React, { useState, useEffect, } from "react";
 import { useParams, Link } from "react-router-dom";
 import { allProjects } from "../data";
+import PledgeForm from "../components/PledgeForm";
+import '../pages/css/ProjectPage.css'
 
 function ProjectPage() {
     const [projectData, setProjectData ] = useState({pledges: []});
@@ -16,24 +18,36 @@ function ProjectPage() {
             });
     }, []);
 
-
     return (
-        <div>
-            <img src={projectData.image}></img>
-            <h2>{projectData.title}</h2>
-            <h3>{`By: ${projectData.owner_projects}`}</h3>
-            <p>{`Description: ${projectData.description}`}</p>
-            <p>{`Goal: $ ${projectData.goal}`}</p>
-            {/* <h3>{`Status: ${projectData.is_open}`}</h3> */}
-            <p>{`Date created: ${projectData.date_created}`}</p>
-            <p> {`Pledges so far:
-                ${projectData.pledges.map((pledgeData, key) => {
-                    return <li key={key}>{pledgeData.amount}</li>
-                })}`}
-            </p>
-            <Link to="/createpledge"><p>Make a Pledge</p></Link>
-           
+        <body>
+            <div className="project-page">
+                <div className='project-page-image'>
+                    <img src={projectData.image}></img>
+                </div>
+                <div className="project-page-container">
+                    <div className="project-page-wrapper">
+                        <div className="project-page-details">
+                            <h2>{projectData.title}</h2>
+                            <h3>{`By: ${projectData.owner_projects}`}</h3>
+                            <p>{`Description: ${projectData.description}`}</p>
+                            <p>{`Goal: $ ${projectData.goal}`}</p>
+                            {/* <h3>{`Status: ${projectData.is_open}`}</h3> */}
+                            <p>{`Date created: ${projectData.date_created}`}</p>
+                            <h3>Pledges</h3>
+                            <ul> {projectData.pledges.map((pledgeData, key) => {
+                                    return ( <li> ${pledgeData.amount} from {pledgeData.supporter}
+                                    </li>
+                                    );
+                                })}
+                            </ul>
+                        </div>
+                    </div>
+                <div className="project-page-pledgeform">
+                    <PledgeForm />  
+                </div>
+                </div>
         </div>
+    </body>
     )
 }
 
