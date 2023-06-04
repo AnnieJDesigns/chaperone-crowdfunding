@@ -21,7 +21,7 @@ function ProjectPage() {
 
     
     return (
-        <body>
+        <div>
             <div className="project-page">
                 <div className='project-page-image'>
                     <img src={projectData.image}></img>
@@ -50,7 +50,7 @@ function ProjectPage() {
                 </div>
                 </div>
         </div>
-    </body>
+    </div>
     )
                         };
 
