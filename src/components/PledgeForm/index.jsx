@@ -44,7 +44,7 @@ function  PledgeForm() {
                 }
                 location.reload();
             } catch (err) {
-                console.error(err);
+
                 alert(`Error: ${err.message}`);
               }
             } else {
@@ -85,11 +85,6 @@ function  PledgeForm() {
                             <label htmlFor="comment">Comment</label>
                             <input onChange={handleChange} type="text" id="comment" placeholder="enter comment"/>
                         </div>
-                        {/* <div>
-                            <label htmlFor="project">Project ID</label>
-                            <input onChange={handleChange} type="number" id="project" placeholder="what project would you like to support"/>
-                        </div> */}
-                        
                         <button className="primary-button" onClick={handleSubmit} type="submit">
                             Submit
                         </button>
