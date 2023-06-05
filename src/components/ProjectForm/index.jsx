@@ -1,7 +1,12 @@
 import React, {useState} from "react";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useOutletContext } from 'react-router-dom';
 
 function ProjectForm() {
+
+    const authToken = window.localStorage.getItem("token")
+
+    const navigate = useNavigate();
+
     const [ project, setProject ] = useState({
         title: '',
         description: '',
@@ -19,7 +24,6 @@ function ProjectForm() {
         }));
     };
     
-    const navigate = useNavigate();
     
     const handleSubmit = (event) => {
         event.preventDefault();
@@ -53,7 +57,7 @@ function ProjectForm() {
 
     
         return (
-            <form>
+            <form onSubmit={handleSubmit}>
                 <div className='title-form'>
                     <h2>Create a Project</h2>
                 </div>
@@ -84,7 +88,7 @@ function ProjectForm() {
                     </label>
                 </div>
                 
-                <button className="primary-button" onClick={handleSubmit} type="submit">
+                <button className="primary-button" type="submit">
                     Submit
                 </button>
             </form>
