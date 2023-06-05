@@ -30,11 +30,11 @@ function ProjectPage() {
                     <div className="project-page-wrapper">
                         <div className="project-page-details">
                         <h2>{projectData.title}</h2>
-                        <h3>{`By: ${projectData.owner_projects}`}</h3>
+                        <h3>{`By: ${projectData.charity_name}`}</h3>
                         <p>{`Description: ${projectData.description}`}</p>
                         <p>{`Goal: $ ${projectData.goal}`}</p>
-                        {/* <h3>{`Status: ${projectData.is_open}`}</h3> */}
-                        <p>{`Date created: ${projectData.date_created}`}</p>
+                        <p>{`Status: ${projectData.is_open}`}</p>
+                        <p>Date created: {(projectData.date_created)}</p>
                         <h3>Pledges</h3>
                         <ul> {projectData.pledges.map((pledgeData, key) => {
                                 return ( <li> ${pledgeData.amount} from {pledgeData.supporter}
