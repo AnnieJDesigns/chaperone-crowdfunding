@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import {useNavigate} from 'react-router-dom';
 import StyledLink from '../Link/StyledLink';
 import {Link} from 'react-router-dom'
+import './nav.css';
 
 
 
@@ -21,20 +22,36 @@ const onLogOut = () => {
     return (
         <div>
             <nav>
-                <div className="logo">
-                <h2>Chaperone</h2>
-                </div>
-                <div className="links">  
-                <StyledLink ToURL="/" TitleLink = 'Home'/>
-                <StyledLink ToURL="/projects" TitleLink = 'Project'/>
-                {isLogIn && <StyledLink ToURL="/createproject" TitleLink = 'Create Project'/>}
-                {isLogIn && <Link onClick ={onLogOut} to="/">Log out</Link>}
-                {!isLogIn && <StyledLink ToURL="/login" TitleLink = 'Login'/>}
-                {!isLogIn && <StyledLink ToURL="/signup" TitleLink = 'Sign Up'/>}
+                <div className='nav-bar'>
+                    <div className='nav-bar-logo'>
+                            <h5>Chaperone</h5>
+                    </div>
+                    <div className='nav-bar-main'>
+                        <div>
+                            <StyledLink ToURL="/" TitleLink = 'Home'/>
+                        </div>
+                        <div>
+                            <StyledLink ToURL="/projects" TitleLink = 'All Projects'/>
+                        </div>
+                        <div>
+                            {isLogIn && <StyledLink ToURL="/createproject" TitleLink = 'Create Project'/>}
+                        </div>
+                    </div>
+                    <div className='nav-bar'>
+                        <div>
+                            {isLogIn && <Link onClick ={onLogOut} to="/">Log out</Link>}
+                        </div>
+                        <div>
+                            <StyledLink ToURL="/login" TitleLink = 'Login'/>
+                        </div>
+                        <div>
+                            {!isLogIn && <StyledLink ToURL="/signup" TitleLink = 'Sign Up'/>}
+                        </div>
+                    </div>
                 </div>
             </nav>
         </div>
-        )
+    )
     
 
 };

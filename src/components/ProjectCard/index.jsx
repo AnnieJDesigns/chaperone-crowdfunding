@@ -10,18 +10,21 @@ function ProjectCard(props) {
     return (
     
         <div className="project-card">
-            <Link to={`/projects/${projectData.id}`}>
+            <Link to={`/projects/${projectData.id}/`}>
                 <div className="project-image-container">
                     <img id="project-display-image" src={projectData.image}></img>
                 </div>
                 <div className="project-text">
-                    <h3>{projectData.title}</h3>
+                    <br></br>
+                    <br></br>
+                    <h4>{projectData.title}</h4>
+                </div>
+            </Link>
+                <div>
                     <p>{projectData.description}</p>
                     <p>by {projectData.charity_name}</p>
                     <p>{projectData.cause}</p>
                 </div>
-        
-            </Link>
             <div>
                 
             </div>

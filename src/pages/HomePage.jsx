@@ -20,7 +20,7 @@ useEffect(() => {
     .then((data) => {
         const recentProjects = data
         .sort((a,b) => new Date(b.date_created) - new Date(a.date_created))
-        .slice(0,3);
+        .slice(0,4);
         setProjectList(recentProjects);
     });
 }, []);
@@ -34,11 +34,11 @@ useEffect(() => {
             <Banner/>
             </div>
                 <div className = 'tagline'>
-                        <h1>Fundrasing for charity projects</h1>
+                        <h2>Fundrasing for charity projects</h2>
                 </div>
                 <div>
                     <div className = "project-wrapper">
-                        <div className = "container">
+                        <div className = "project-container">
                             <div className = "project">
                                     <h2>Latest Projects</h2>
                                     <button className="secondary-button">Explore Projects</button>
