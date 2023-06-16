@@ -31,7 +31,7 @@ function ProjectForm() {
         if (project.title && project.description){
             postData().then((response)=> {
                 console.log(response)
-                navigate(`/projects/${response.id}`);
+                navigate(`/projects/${response.id}/`);
             })
         }
     }

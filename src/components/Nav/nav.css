@@ -1,0 +1,11 @@
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 750px;
+}
+
+.nav-bar-main, .nav-bar-auth  {
+    display: flex;
+    flex-direction: row;
+}

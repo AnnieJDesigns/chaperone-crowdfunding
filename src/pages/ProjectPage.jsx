@@ -30,7 +30,7 @@ function ProjectPage() {
                     <div className="project-page-wrapper">
                         <div className="project-page-details">
                         <h2>{projectData.title}</h2>
-                        <h3>{`By: ${projectData.charity_name}`}</h3>
+                        <h3>{`By: ${projectData.owner_projects}`}</h3>
                         <p>{`Description: ${projectData.description}`}</p>
                         <p>{`Goal: $ ${projectData.goal}`}</p>
                         <p>{`Status: ${projectData.is_open}`}</p>
