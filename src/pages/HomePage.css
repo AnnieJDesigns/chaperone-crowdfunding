@@ -1,16 +1,19 @@
 
 .project-wrapper {
-    /* width: 100%; */
-    height: 700px;
+    width: auto;
+    height: auto;
     display: flex;
     flex-direction: column;
+}
+
+.project-inner {
+    display: flex;
     justify-content: center;
-    padding-left: 5px;
-    padding-right: 5px;
 }
 
 .project-container {
-    width: 100%;
+    width: 750px;
+    height: auto;
     display: flex;
     flex-direction: column;
 

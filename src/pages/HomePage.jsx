@@ -20,7 +20,7 @@ useEffect(() => {
     .then((data) => {
         const recentProjects = data
         .sort((a,b) => new Date(b.date_created) - new Date(a.date_created))
-        .slice(0,4);
+        .slice(0,3);
         setProjectList(recentProjects);
     });
 }, []);
@@ -38,16 +38,18 @@ useEffect(() => {
                 </div>
                 <div>
                     <div className = "project-wrapper">
-                        <div className = "project-container">
-                            <div className = "project">
-                                    <h2>Latest Projects</h2>
-                                    <button className="secondary-button">Explore Projects</button>
+                        <div className = "project-inner">
+                            <div className = "project-container">
+                                <div className = "project">
+                                        <h2>Latest Projects</h2>
+                                        <button className="secondary-button">Explore Projects</button>
+                                    </div>
+                                <div className ="project-carousel">
+                                    {projectList.map((projectData, key)=> {
+                                        return <ProjectCard key={key} projectData={projectData} />;
+                                    }
+                )}
                                 </div>
-                            <div className ="project-carousel">
-                                {projectList.map((projectData, key)=> {
-                                    return <ProjectCard key={key} projectData={projectData} />;
-                                }
-            )}
                             </div>
                         </div>
                     </div>

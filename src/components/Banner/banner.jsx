@@ -18,7 +18,7 @@ function Banner() {
                                 </h3>
                         </div>
                         <div>
-                            <button className='banner-btn'><p>See all projects</p></button>
+                            <button className='banner-btn'><h5>See all projects</h5></button>
                         </div>
                 </div>
                     <div>

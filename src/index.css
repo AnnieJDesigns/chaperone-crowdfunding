@@ -19,9 +19,18 @@ h4 {
     font-size: 16px;
 }
 
+h5 {
+  font-family: 'Raleway', sans-serif;
+    color: #1C585C;
+    font-size: 12px;
+    font-weight: bold;
+
+}
+
 p {
     font-family: 'Raleway', sans-serif;
-    font-size: 8px;
+    color: #1C585C;
+    font-size: 12px;
 }
 
 label {
