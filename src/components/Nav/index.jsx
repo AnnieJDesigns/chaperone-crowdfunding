@@ -23,29 +23,31 @@ const onLogOut = () => {
         <div>
             <nav>
                 <div className='nav-bar'>
-                    <div className='nav-bar-logo'>
-                            <h5>Chaperone</h5>
-                    </div>
-                    <div className='nav-bar-main'>
-                        <div>
-                            <StyledLink ToURL="/" TitleLink = 'Home'/>
+                    <div className='nav-bar-container'>
+                        <div className='nav-bar-logo'>
+                                <h5>Chaperone</h5>
                         </div>
-                        <div>
-                            <StyledLink ToURL="/projects" TitleLink = 'All Projects'/>
+                        <div className='nav-bar-main'>
+                            <div>
+                                <StyledLink ToURL="/" TitleLink = 'Home'/>
+                            </div>
+                            <div>
+                                <StyledLink ToURL="/projects" TitleLink = 'All Projects'/>
+                            </div>
+                            <div>
+                                {isLogIn && <StyledLink ToURL="/createproject" TitleLink = 'Create Project'/>}
+                            </div>
                         </div>
-                        <div>
-                            {isLogIn && <StyledLink ToURL="/createproject" TitleLink = 'Create Project'/>}
-                        </div>
-                    </div>
-                    <div className='nav-bar'>
-                        <div>
-                            {isLogIn && <Link onClick ={onLogOut} to="/">Log out</Link>}
-                        </div>
-                        <div>
-                            <StyledLink ToURL="/login" TitleLink = 'Login'/>
-                        </div>
-                        <div>
-                            {!isLogIn && <StyledLink ToURL="/signup" TitleLink = 'Sign Up'/>}
+                        <div className='nav-bar'>
+                            <div>
+                                {isLogIn && <Link onClick ={onLogOut} to="/">Log out</Link>}
+                            </div>
+                            <div>
+                                <StyledLink ToURL="/login" TitleLink = 'Login'/>
+                            </div>
+                            <div>
+                                {!isLogIn && <StyledLink ToURL="/signup" TitleLink = 'Sign Up'/>}
+                            </div>
                         </div>
                     </div>
                 </div>
