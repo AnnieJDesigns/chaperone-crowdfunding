@@ -33,7 +33,56 @@
     align-items: center;
 }
 
+
 .tagline {
+    text-align: left;
+}
+
+.tagline h2 {
+   margin: 0px;
+   margin-bottom: 2rem;
+
+}
+
+.tagline h4 {
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    margin-left: 0px;
+    margin-right: 0px;
+    
+}
+
+.step-wrapper {
+    margin-right: 20px;
+
+}
+
+.step {
+    background-color: #1C585C;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.step-number {
+    color: #fff;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1.;
+
+}
+
+.what-can-I-expect {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+}
+
+.step-instructions h5 {
+    margin-top: 1rem;
+    margin-bottom: 0px;
+}
+
+.step-instructions h6 {
+    margin-top: 0.5rem;
 }
