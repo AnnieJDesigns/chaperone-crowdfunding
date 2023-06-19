@@ -5,14 +5,16 @@
 } */
 
 .project-card {
-    height: 200px;
+    height: 400px;
     width: 230px;
-    margin: 10px;
+    margin-right: 10px;
     border-radius: 10px;
+    
 }
 
+
 .project-image-container {
-    height: 100px;
+    height: 150px;
     width: 100%;
 }
 
@@ -20,14 +22,13 @@
     width: 230px;
     height: 150px;
     object-fit: cover;
-    border-radius: 0px;
+    border-radius: 6px;
 }
 
-.project-text {
-    padding: 3%;
+h6.by {
+    color: #1C585C;
 
 }
-
 
 
 

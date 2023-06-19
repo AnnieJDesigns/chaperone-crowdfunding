@@ -52,9 +52,40 @@
     
 }
 
-.step-wrapper {
-    margin-right: 20px;
+.what-can-I-expect-wrapper{
+    width:auto;
+    height:auto;
+}
 
+.what-can-I-expect-inner{
+    display: flex;
+    justify-content: center;
+}
+
+.what-can-I-expect {
+    width: 750px;
+    display: flex;
+    flex-direction: column;
+}
+
+.instructions-wrapper {
+    width:auto;
+    height:auto;
+}
+
+.instructions-inner{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.instructions-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.step-wrapper {
+    width:220px;
+    height: auto;
 }
 
 .step {
@@ -63,6 +94,7 @@
     height: 20px;
     border-radius: 50%;
 }
+
 .step-number {
     color: #fff;
     text-align: center;
@@ -73,10 +105,6 @@
 
 }
 
-.what-can-I-expect {
-    display: flex;
-    flex-direction: row;
-}
 
 .step-instructions h5 {
     margin-top: 1rem;
