@@ -23,10 +23,14 @@ function ProjectCard(props) {
             <div>
 
                 <div className="project-text">
+                    <h6>{projectData.cause}</h6>
                     <h3>{projectData.title}</h3>
                     <p>{projectData.description}</p>
-                    <h6 className='by'>by {projectData.charity_name}</h6>
-                    <h6>{projectData.cause}</h6>
+                    <h6>by {projectData.charity_name}</h6>
+                    <div className='project-text-goal'>
+                        <h3>Goal: ${projectData.goal}</h3>
+                    </div>
+                    
             </div>
 
         </div>
