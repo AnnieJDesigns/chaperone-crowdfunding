@@ -7,10 +7,15 @@
 }
 
 .causes-project-card-inner {
-    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    margin-top: 20px;
+    text-align: center;
 }
 
 .cause-image {
-    width: 50%;
-    height: auto;
+    height: 92px;
 }

@@ -1,0 +1,42 @@
+.cause-banner-wrapper {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.cause-banner-inner {
+    display: flex;
+    justify-content: center;
+
+}
+
+.cause-banner-container {
+    width: 750px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.cause-banner-title {
+    text-align: left;
+}
+
+.cause-banner-title h2 {
+    margin: 0px;
+   margin-bottom: 2rem;
+}
+
+.cause-banner-title h4 {
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.causes-banner-map {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
