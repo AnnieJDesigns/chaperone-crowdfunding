@@ -1,0 +1,16 @@
+.causes-project-card {
+    height: 180px;
+    width: 140px;
+    margin-right: 10px;
+    border-radius: 8px;
+    background-color: #EFEFEF;
+}
+
+.causes-project-card-inner {
+    margin: 10px;
+}
+
+.cause-image {
+    width: 50%;
+    height: auto;
+}

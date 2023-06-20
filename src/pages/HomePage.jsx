@@ -5,6 +5,7 @@ import ProjectCard from "../components/ProjectCard";
 import Banner from "../components/Banner/banner";
 import './HomePage.css'
 import StyledLink from "../components/Link/StyledLink";
+import CausesBanner from "../components/Causes/Causes-Banner/causes-banner";
 
 
 
@@ -88,6 +89,13 @@ useEffect(() => {
                     </div>
                 </div>
             </div>
+
+            {/* Causes Component */}
+
+            <CausesBanner/>
+
+            {/* End of Causes Component */}
+
                 <div>
                     <div className = "project-wrapper">
                         <div className = "project-inner">
