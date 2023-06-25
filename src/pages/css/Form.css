@@ -1,0 +1,93 @@
+.formpage-wrapper {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.formpage-inner {
+    display: flex;
+    justify-content: center;
+
+}
+
+.formpage-container {
+    width: 750px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.form-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+label {
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+}
+
+.form > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form {
+    padding: 30px 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.title-form {
+    margin-top: 0px;
+}
+
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type=url], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type=email], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type=password], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input:focus {
+    border: 1px solid #1C585C;;
+  }

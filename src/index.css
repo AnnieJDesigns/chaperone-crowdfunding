@@ -44,81 +44,29 @@ h6 {
 p {
     font-family: 'Raleway', sans-serif;
     color: #696969;
-    font-size: 12px;
+    font-size: 10px;
     line-height: 1.4;
   
 }
 
-label {
-    font-family: 'Raleway', sans-serif;
-    font-size: 12px;
+.space-medium {
+  width: auto;
+  height: 40px;
 }
 
-.form > div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.space-small {
+  width: auto;
+  height: 20px;
 }
 
-form {
-    margin: 50px;
-    padding: 30px 20px;
-    border: 1px solid #ccc;
-    border-radius: 50px;
-    display: flex;
-    flex-direction: column;
-    
+.divider {
+  border-bottom: 1px solid #1C585C;
+  width: 750px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding: 10px;
 }
-
-.form-wrapper {
-    padding: 20px 100px
-}
-
-.title-form {
-    margin-top: 0px;
-}
-
-
-input[type=text], select {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-
-  input[type=url], select {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-
-  input[type=email], select {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-
-  input[type=password], select {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-  
   
   .primary-button {
     border-radius: 30px;
@@ -155,3 +103,31 @@ input[type=text], select {
     flex-wrap: wrap;
   }
 
+  .primary-btn {
+
+    border: 2px solid #1C585C;
+    background-color: #fff;
+    border-radius: 1.5rem;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    transition: all .1s cubic-bezier(.4, 0, .2, 1);
+    box-shadow: 0px 1px 2px rgba(166, 175, 195, 0.25);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 100px;
+    padding: 6px;
+    font-family: 'Raleway', sans-serif;
+    color: #1C585C;
+    font-weight: bold;
+  }
+  
+  .primary-btn:hover
+   {
+      color: white;
+      background-color: #1C585C;
+    }
+  
+  
