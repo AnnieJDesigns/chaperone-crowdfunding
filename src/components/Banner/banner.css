@@ -74,5 +74,10 @@
   .banner-btn {
     font-size: 0.8rem;
   }
+
+  .min-width-image {
+    visibility: hidden;
+  }
+  
 }
 

@@ -1,0 +1,28 @@
+.all-projects-wrapper {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.all-projects-inner {
+    display: flex;
+    justify-content: center;
+
+}
+
+.all-projects-container {
+    width: 750px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.all-projects {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }

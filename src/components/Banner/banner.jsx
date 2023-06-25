@@ -9,7 +9,7 @@ function Banner() {
             <div classname='hero'>
                 <div className="hero-wrapper">
                     <div>
-                        <img className="banner-image" src="images/Asset 5.png"></img>
+                        <img className="banner-image" id='min-width-image'src="images/Asset 5.png"></img>
                     </div>
                     <div className="banner-tagline">
                         <div className='tagline'>

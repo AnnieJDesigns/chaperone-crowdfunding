@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from "react";
 import { allProjects } from "../data";
 import ProjectCard from "../components/ProjectCard";
+import '../pages/css/AllProjects.css';
 
 function AllProjectPage() {
     const [projectList, setProjectList] = useState([]);
@@ -18,13 +19,29 @@ function AllProjectPage() {
     
         return (
             <div>
-                <h2>All Projects</h2>
-                <div className='all-projects'>
-                    {projectList.map((projectData, key)=> {
-                        return <ProjectCard key={key} projectData={projectData} />;
-                    }
-                    )}
+
+                <div className="all-projects-wrapper">
+
+                    <div className="all-projects-inner">
+
+                        <div className="all-projects-container">
+
+                            <div className="all-projects-title">
+                                <h2>All Projects</h2>
+                            </div>
+                            <div className='all-projects'>
+                                {projectList.map((projectData, key)=> {
+                                    return <ProjectCard key={key} projectData={projectData} />;
+                                }
+                                )}
+                            </div>
+
+                        </div>
+
+                    </div>
+
                 </div>
+
             </div>
         )
     }

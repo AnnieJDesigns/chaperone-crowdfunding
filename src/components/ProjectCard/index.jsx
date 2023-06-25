@@ -10,7 +10,6 @@ function ProjectCard(props) {
     return (
     
         <div className="project-card">
-
             <div>
             <Link to={`/projects/${projectData.id}/`}>
 
@@ -19,7 +18,6 @@ function ProjectCard(props) {
                 </div>
             </Link>
             </div>
-
             <div>
 
                 <div className="project-text">

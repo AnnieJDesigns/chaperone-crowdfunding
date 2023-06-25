@@ -36,6 +36,7 @@ useEffect(() => {
             <div>
             <Banner/>
             </div>
+            <div className="space-medium"></div>
             <div className="what-can-I-expect-wrapper">
                 <div className="what-can-I-expect-inner">
                     <div className='what-can-I-expect'>
@@ -90,11 +91,20 @@ useEffect(() => {
                 </div>
             </div>
 
+            <div className="space-medium"></div>
+            <div className="divider"></div>
+            <div className="space-medium"></div>
+
             {/* Causes Component */}
 
             <CausesBanner/>
 
+
             {/* End of Causes Component */}
+            
+            <div className="space-medium"></div>
+            <div className="divider"></div>
+            <div className="space-medium"></div>
 
                 <div>
                     <div className = "project-wrapper">
