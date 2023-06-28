@@ -89,5 +89,5 @@ input[type=text], select {
   }
 
   input:focus {
-    border: 1px solid #1C585C;;
+    border: 1px solid #1C585C;
   }

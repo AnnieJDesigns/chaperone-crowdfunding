@@ -22,35 +22,49 @@ function ProjectPage() {
     
     return (
         <div>
-            <div className="project-page">
-                <div className='project-page-image'>
-                    <img src={projectData.image}></img>
+            <div className="project-page-wrapper">
+            <div><h2>{projectData.title}</h2></div>
+            <div className="project-page-inner">
+            <div className="project-page-container">
+                <div className="project-page-col-1">                     
+                            <div className='project-page-image'>
+                                <img src={projectData.image}></img>
+                            </div>
+
+                            <div className="project-page-detail-container">
+                                <div className="project-page-detail-wrapper">
+                                    <div className="project-page-detail-details">
+                                    <p>{`Description: ${projectData.description}`}</p>
+                                    <h3>{`By: ${projectData.owner_projects}`}</h3>
+                                    </div>
+                                    <div>
+                                <h3>Words of Support</h3>
+                            </div>
+                                </div>
                 </div>
-                <div className="project-page-container">
-                    <div className="project-page-wrapper">
-                        <div className="project-page-details">
-                        <h2>{projectData.title}</h2>
-                        <h3>{`By: ${projectData.owner_projects}`}</h3>
-                        <p>{`Description: ${projectData.description}`}</p>
-                        <p>{`Goal: $ ${projectData.goal}`}</p>
-                        <p>{`Status: ${projectData.is_open}`}</p>
-                        <p>Date created: {(projectData.date_created)}</p>
-                        <h3>Pledges</h3>
-                        <ul> {projectData.pledges.map((pledgeData, key) => {
-                                return ( <li> ${pledgeData.amount} from {pledgeData.supporter}
-                                </li>
-                                );
-                            })}
-                        </ul>
-                    </div>
-                    </div>
-                <div className="project-page-pledgeform">
-                <PledgeForm />
- 
-                </div>
-                </div>
+            </div>
+
+                        <div className="project-page-col-2">
+                            <div className="project-page-title">
+                            <h2>{`Goal: $ ${projectData.goal}`}</h2>
+                            <button className="project-page-primary-btn">Donate now</button>
+                            <div className="space-small"></div>
+                            </div>
+                            <h3>Pledges</h3>
+                                    <ul> {projectData.pledges.map((pledgeData, key) => {
+                                            return ( <li> ${pledgeData.amount} from {pledgeData.supporter}
+                                            </li>
+                                            );
+                                        })}
+                                    </ul>   
+
+                        </div>
+            </div>
+            </div>
+            </div>
+
         </div>
-    </div>
+   
     )
                         };
 

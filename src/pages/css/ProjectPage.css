@@ -1,33 +1,89 @@
-.project-page {
+
+.project-page-wrapper {
+    width: auto;
+    height: auto;
     display: flex;
+    width: 750px;
     flex-direction: column;
-    padding-left: 30px;
-    padding-right: 30px;
     margin: auto;
+}
+
+.project-page-inner {
+    display: flex;
+    justify-content: center;
+}
+
+.project-page-container {
+    width: 750px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
 }
 
 .project-page-image {
     display: flex;
     justify-content: center;
-    margin:auto;
+    max-width: 450px;
+    max-height: 300px;
 }
 
-.project-page-container {
+.project-page-detail-container {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     margin:auto;
 }
 
-.project-page-details {
+.project-page-detail-details {
     display: flex;
     flex-direction: column;
 }
 
-.project-page-pledgeform {
-    display: flex;
+.project-page-title {
+    color: #1C585C;
+    border-bottom: 1px solid #1C585C;
 }
 
 body {
     margin: auto;
 }
+
+.project-page-col-1{
+    width: 490px;
+    margin-left: 10px;
+}
+
+.project-page-col-2 {
+    width: 250px;
+    border: 1px solid #efefef;
+    border-radius: 6px;
+    padding: 20px;
+}
+
+.project-page-primary-btn {
+
+    border: 2px solid #1C585C;
+    background-color: #fff;
+    border-radius: 1.5rem;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    transition: all .1s cubic-bezier(.4, 0, .2, 1);
+    box-shadow: 0px 1px 2px rgba(166, 175, 195, 0.25);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 100%;
+    padding: 10px;
+    font-family: 'Raleway', sans-serif;
+    color: #1C585C;
+    font-weight: bold;
+  }
+  
+  .project-page-primary-btn:hover
+   {
+      color: white;
+      background-color: #1C585C;
+    }
+  
