@@ -96,13 +96,6 @@ p {
     height: 50px;
   }
 
-  .all-projects {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
   .primary-btn {
 
     border: 2px solid #1C585C;

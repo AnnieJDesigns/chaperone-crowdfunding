@@ -13,10 +13,16 @@ import SignUpPage from './pages/SignUpPage';
 
 const HeaderLayout = () => {
   return (
-    <div>
-    <Nav/>
-    <Outlet/>
-    <Footer />
+    <div className='home'>
+      <div className='page-container'>
+        <Nav/>
+        <div className='content-wrapper'>
+            <Outlet/>
+        </div>
+      </div>
+        {/* <footer className='footer_pin'>
+          <Footer />
+        </footer> */}
     </div>
   )
 }
