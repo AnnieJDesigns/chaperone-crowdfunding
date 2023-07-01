@@ -1,5 +1,6 @@
 import React from 'react';
 import './banner.css';
+import {Link} from 'react-router-dom';
 
 
 
@@ -21,7 +22,9 @@ function Banner() {
                         <h5>Fundraising for charity projects</h5>
                         </div>
                         <div>
-                            <button className='banner-btn'>See all projects</button>
+                            <Link to='/projects'>
+                            <button className='banner-btn' onClick='/projects'>See all projects</button>
+                            </Link>
                         </div>
                 </div>
                     <div>

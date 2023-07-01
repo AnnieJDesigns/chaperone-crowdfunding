@@ -41,6 +41,7 @@ function AllProjectPage() {
                     </div>
 
                 </div>
+                <div className="space-medium"></div>
 
             </div>
         )

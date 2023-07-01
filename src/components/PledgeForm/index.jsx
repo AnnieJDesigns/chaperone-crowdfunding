@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import { useNavigate, useParams } from 'react-router-dom';
+import '../../pages/css/Form.css';
 
 function  PledgeForm() {
     const { id } = useParams();
@@ -77,6 +78,9 @@ function  PledgeForm() {
 
                 return (
                     <form>
+                         <div className='title-form'>
+                            <h2>Donate</h2>
+                        </div>
                         <div>
                             <label htmlFor="amount">Amount</label>
                             <input onChange={handleChange} type="text" id="amount" placeholder="enter amount"/>
@@ -85,7 +89,10 @@ function  PledgeForm() {
                             <label htmlFor="comment">Comment</label>
                             <input onChange={handleChange} type="text" id="comment" placeholder="enter comment"/>
                         </div>
-                        <button className="primary-button" onClick={handleSubmit} type="submit">
+
+                        <div className='space-small'></div>
+                        
+                        <button className="primary-btn" onClick={handleSubmit} type="submit">
                             Submit
                         </button>
                     </form>

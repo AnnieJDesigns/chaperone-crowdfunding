@@ -52,6 +52,10 @@ const router = createBrowserRouter([
         element: <CreateProject />
       },
       {
+        path: '/projects/:id/createproject',
+        element: <CreateProject />
+      },
+      {
         path: '/createpledge',
         element: <CreatePledge />
       },

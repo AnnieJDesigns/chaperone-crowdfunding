@@ -20,7 +20,7 @@ const onLogOut = () => {
 
 
     return (
-        <div>
+        <div className='nav-bar-1'>
             <nav>
                 <div className='nav-bar'>
                     <div className='nav-bar-container'>
@@ -40,7 +40,8 @@ const onLogOut = () => {
                         </div>
                         <div className='nav-bar'>
                             <div>
-                                {isLogIn && <Link onClick ={onLogOut} to="/">Log out</Link>}
+                            {isLogIn && <StyledLink ToURL="/" TitleLink ='Log out' Action={onLogOut}/>}
+                                {/* {isLogIn && <Link onClick ={onLogOut} to="/">Log out</Link>} */}
                             </div>
                             <div>
                                 <StyledLink ToURL="/login" TitleLink = 'Login'/>

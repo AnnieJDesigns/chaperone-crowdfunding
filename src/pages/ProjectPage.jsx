@@ -47,20 +47,23 @@ function ProjectPage() {
                         <div className="project-page-col-2">
                             <div className="project-page-title">
                             <h2>{`Goal: $ ${projectData.goal}`}</h2>
-                            <button className="project-page-primary-btn">Donate now</button>
+                            <Link to='/createpledge'>
+                                <button className="project-page-primary-btn">Donate now</button>
+                            </Link>
                             <div className="space-small"></div>
                             </div>
                             <h3>Pledges</h3>
-                                    <ul> {projectData.pledges.map((pledgeData, key) => {
-                                            return ( <li> ${pledgeData.amount} from {pledgeData.supporter}
-                                            </li>
+                                    <p> {projectData.pledges.map((pledgeData, key) => {
+                                            return ( <p> ${pledgeData.amount} from {pledgeData.supporter}
+                                            </p>
                                             );
                                         })}
-                                    </ul>   
+                                    </p>   
 
                         </div>
             </div>
             </div>
+            <div className="space-medium"></div>
             </div>
 
         </div>
