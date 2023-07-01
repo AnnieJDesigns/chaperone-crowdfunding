@@ -125,6 +125,7 @@ useEffect(() => {
                     </div>
                 </div>
             </section>
+            <div className="space-medium"></div>
         </div>
     )
 }

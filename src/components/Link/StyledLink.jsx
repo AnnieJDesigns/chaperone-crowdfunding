@@ -4,9 +4,9 @@ import './index.css'
 
 
 function StyledLink(props) {
-    const {ToURL, TitleLink} = props
+    const {ToURL, TitleLink, Action} = props
     return (
-        <Link className="links" to={ToURL}>{TitleLink}</Link>
+        <Link className="links" to={ToURL} onClick={Action}>{TitleLink}</Link>
     )
 }
 export default StyledLink
